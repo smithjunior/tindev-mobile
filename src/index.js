@@ -1,7 +1,7 @@
-import React from 'react';
-import Login from './pages/Login';
+import React from 'react'
+import Routes from './routes'
 export default function App() {
   return (
-    <Login /> 
+    <Routes /> 
   );
 }
