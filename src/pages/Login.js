@@ -2,21 +2,21 @@ import React from 'react'
 import { KeyboardAvoidingView, Platform, Image, StyleSheet, TextInput, TouchableOpacity, Text } from 'react-native'
 
 import logo from '../assets/logo.png'
-export default function Login({ navigation }){
-  function handleLogin(){
+export default function Login ({ navigation }) {
+  function handleLogin () {
     navigation.navigate('Main')
   }
+
   return (
     <KeyboardAvoidingView
       behavior='padding'
-      enabled={ Platform.OS === 'ios' }
-      style={ styles.container }
+      enabled={Platform.OS === 'ios'}
+      style={styles.container}
     >
       <Image source={logo} />
-      <TextInput 
-        autoCapitalize='none'
+      <TextInput autoCapitalize='none'
         autoCorrect={false}
-        placeholder='Digite seu usuário no Github!' 
+        placeholder='Digite seu usuário no Github!'
         placeholderTextColor='#999'
         style={styles.input}
       />
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#f5f5f5',
     justifyContent: 'center',
     alignItems: 'center',
-    padding:30
+    padding: 30
   },
   input: {
     height: 46,
@@ -43,20 +43,20 @@ const styles = StyleSheet.create({
     borderColor: '#ddd',
     borderRadius: 4,
     marginTop: 20,
-    paddingHorizontal: 15,    
+    paddingHorizontal: 15
   },
   button: {
-    height:46,
+    height: 46,
     alignSelf: 'stretch',
     backgroundColor: '#df4723',
     borderRadius: 4,
-    marginTop:10,
+    marginTop: 10,
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'center'
   },
   buttonText:{
     color: '#fff',
     fontSize: 16,
-    fontWeight: 'bold',
-  },
+    fontWeight: 'bold'
+  }
 })

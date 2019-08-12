@@ -1,7 +1,7 @@
 import React from 'react'
-import {  Text } from 'react-native'
+import { Text } from 'react-native'
 
-export default function Main(){
+export default function Main () {
   return (
     <Text>OLá</Text>
   )
