@@ -35,6 +35,10 @@
   "jest": {
     "preset": "react-native"
   },
+  "engines": {
+    "node": "10.16.2",
+    "npm": "6.9.0"
+  },
   "files.watcherExclude": {
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,
