@@ -14,7 +14,7 @@ export default function Login ({ navigation }) {
         navigation.navigate('Main', dev)
       }
     })
-  }, [])
+  }, [navigation])
 
   async function handleLogin () {
     const response = await api.post('/devs', { username: dev })
