@@ -192,7 +192,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0,0,0,0.8)',
     justifyContent: 'center',
     alignItems: 'center',
-    zIndex: 10000
+    zIndex: 999999
   },
   matchImage: {
     height: 60,
